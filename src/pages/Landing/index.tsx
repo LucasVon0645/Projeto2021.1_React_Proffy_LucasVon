@@ -16,10 +16,12 @@ function Landing () {
 
     useEffect(() => {
         api.get('connections').then(response => {
-            const {total} = response.data;
+            const total = response.data;
+            console.log(total)
             setTotalConnections(total);
         })
     }, []);
+
 
     return (
         <div id="page-landing">

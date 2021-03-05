@@ -50,11 +50,11 @@ function TeacherForm() {
             subject,
             cost: Number(cost),
             schedule: scheduleItems}).then(() => {
-                console.log('Cadastro realizado com sucesso');
+                alert('Cadastro realizado com sucesso');
                 
                 history.push('/');
             }).catch(() => {
-                console.log('Erro no cadastro!')
+                alert('Erro no cadastro!')
             })
 
         console.log({
