@@ -19,7 +19,7 @@ const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
             <label htmlFor={name}>{label}</label>
             <select id={name} {...rest}>
 
-                <option value="" disabled hidden>Selecione uma opção</option>
+                <option value="" disabled hidden>Selecione</option>
 
                 {options.map(option => {
                     return <option key={option.value}
@@ -30,4 +30,4 @@ const Select: React.FC<SelectProps> = ({label, name, options, ...rest}) => {
     )
 }
 
-export default Select
+export default Select;
